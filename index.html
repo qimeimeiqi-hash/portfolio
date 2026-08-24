@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: 替换为你自己的描述，用于搜索引擎摘要 -->
+  <meta name="description" content="張美琪のポートフォリオサイト —— システムエンジニア(SE)・プログラマー(PG)。Webアプリケーション開発を中心に活動しています。">
+  <title>張美琪 | ポートフォリオ</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== 导航栏 ========== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">ZM</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav="home">ホーム</a></li>
+        <li><a href="#about" class="nav-link" data-nav="about">私について</a></li>
+        <li><a href="#skills" class="nav-link" data-nav="skills">スキル</a></li>
+        <li><a href="#career" class="nav-link" data-nav="career">職務経歴</a></li>
+        <li><a href="#contact" class="nav-link" data-nav="contact">連絡先</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== Hero 首屏 ========== -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <img
+          class="hero-avatar"
+          src="assets/images/avatar.jpg"
+          alt="張美琪のプロフィール写真"
+          width="160"
+          height="160"
+        >
+        <h1 class="hero-title">こんにちは、<span class="highlight">張美琪</span> です <span class="hero-title-en">Zhang Meiqi</span></h1>
+        <p class="hero-subtitle">システムエンジニア(SE) ・ プログラマー(PG) ・ Webアプリケーション開発が得意</p>
+
+        <div class="social-links">
+          <a href="https://github.com/qimeimeiqi-hash" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.07.77 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5z"/>
+            </svg>
+          </a>
+          <a href="mailto:qimeimeiqi@gmail.com" class="social-link" aria-label="メール" title="メール">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 9L3.5 6h17L12 13zM2 7.24V18h20V7.24l-10 7.5-10-7.5z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#career" class="btn btn-primary">職務経歴を見る</a>
+          <a href="#contact" class="btn btn-outline">連絡する</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="下へスクロール">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ========== 关于我 ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">私について</h2>
+        <div class="about-grid">
+          <div class="about-text fade-in">
+            <p>
+              プログラマー(PG)およびシステムエンジニア(SE)として、要件定義から基本設計・詳細設計、開発・試験まで幅広い工程を経験してきました。
+              特にWebアプリケーションの画面開発を数多く手がけ、単体試験・結合試験の仕様書作成から実施までを一貫して担当した経験があります。
+              客先での運用・保守業務の経験もあり、開発して終わりではなく、その後の安定稼働まで見据えた開発を心がけています。
+            </p>
+            <p>
+              コミュニケーションを大切にしながらチームで作業を進めることを得意とし、新しいことにも好奇心を持って挑戦する姿勢を大切にしています。
+              積極的に自主学習を行い知識の習得に努めるとともに、プロジェクト全体像を把握したうえで作業を進めることを意識しています。
+            </p>
+            <a href="assets/docs/resume.pdf" class="btn btn-outline resume-btn" download="職務経歴書_張美琪.pdf">職務経歴書をダウンロード（PDF）</a>
+          </div>
+          <div class="about-cards fade-in">
+            <div class="info-card">
+              <span class="info-card-label">所在地</span>
+              <span class="info-card-value">日本</span>
+            </div>
+            <div class="info-card">
+              <span class="info-card-label">学歴</span>
+              <span class="info-card-value">千葉商科大学 商学科（2015.04 – 2019.03）</span>
+            </div>
+            <div class="info-card">
+              <span class="info-card-label">得意分野</span>
+              <span class="info-card-value">PG / SE ・ Webアプリケーション開発</span>
+            </div>
+            <div class="info-card">
+              <span class="info-card-label">保有資格</span>
+              <span class="info-card-value">日本語能力試験N1 ／ 日商簿記検定2級 ／ 基本情報技術者試験 ／ MOS(2013)マスター ／ デジタルコンテンツアセッサ3級</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 技能 ========== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title fade-in">スキル</h2>
+        <div class="skills-grid">
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">プログラミング言語</h3>
+            <div class="tag-cloud">
+              <span class="tag">Java<span class="skill-level" title="基本実装から不具合対応まで対応可能">B</span></span>
+              <span class="tag">C#<span class="skill-level" title="基本実装から不具合対応まで対応可能">B</span></span>
+              <span class="tag">Python<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+              <span class="tag">JavaScript<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+              <span class="tag">VBA<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+            </div>
+          </div>
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">フロントエンド</h3>
+            <div class="tag-cloud">
+              <span class="tag">HTML<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+              <span class="tag">CSS<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+              <span class="tag">Thymeleaf<span class="skill-level" title="研修レベル">E</span></span>
+            </div>
+          </div>
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">フレームワーク・DB</h3>
+            <div class="tag-cloud">
+              <span class="tag">Django<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+              <span class="tag">ADO.NET<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+              <span class="tag">SQL全般<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+            </div>
+          </div>
+          <div class="skill-group fade-in">
+            <h3 class="skill-group-title">OS・ツール</h3>
+            <div class="tag-cloud">
+              <span class="tag">Windows<span class="skill-level" title="既存コードの改修が可能">C</span></span>
+              <span class="tag">Git / GitHub<span class="skill-level" title="概要レベルで理解">D</span></span>
+            </div>
+          </div>
+        </div>
+        <p class="skills-legend fade-in">評価基準　A：応用・指導が可能　B：実装から不具合対応まで対応可能　C：既存コードの改修が可能　D：概要レベルで理解　E：研修レベル</p>
+      </div>
+    </section>
+
+    <!-- ========== 职务经历 ========== -->
+    <section id="career" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">職務経歴</h2>
+        <div class="timeline">
+
+          <div class="timeline-company fade-in">
+            <span class="timeline-company-dot"></span>
+            <div>
+              <h3 class="timeline-company-name">マンパワーグループ株式会社</h3>
+              <span class="timeline-company-period">2022.02 – 現在</span>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2022.02 – 2023.11（22ヶ月）</span>
+                <span class="timeline-industry">医療・福祉</span>
+              </div>
+              <h3 class="timeline-title">COBOLシステムからJava環境へのシステム移行</h3>
+              <p class="timeline-desc">
+                COBOLからJavaへ移行したシステムの改修を担当。設計書の書き起こしからバグ解析・改修、テスト実施までを一貫して対応し、
+                Redmineによるチケット管理で進捗を管理。
+              </p>
+              <p class="timeline-role">役割：SE（チーム7名 ／ 全体22名）　工程：詳細設計・製造・単体試験・結合試験</p>
+              <div class="tag-cloud">
+                <span class="tag tag-sm">Java</span>
+                <span class="tag tag-sm">Spring Boot</span>
+                <span class="tag tag-sm">HTML / CSS / JavaScript</span>
+                <span class="tag tag-sm">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-company fade-in">
+            <span class="timeline-company-dot"></span>
+            <div>
+              <h3 class="timeline-company-name">株式会社ウイズ・ワン</h3>
+              <span class="timeline-company-period">2019 – 2021.10</span>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2021.07 – 2021.10（4ヶ月）</span>
+                <span class="timeline-industry">医療・福祉</span>
+              </div>
+              <h3 class="timeline-title">看護師募集サイトの保守・機能改修</h3>
+              <p class="timeline-desc">
+                保守作業と仕様変更対応を担当。応募受付部分の6機能を改修し、変更のない項目は既存値をそのまま保持し、
+                更新が必要な箇所を自動的に仮設定する仕組みを導入して募集情報の更新作業を効率化。
+              </p>
+              <p class="timeline-role">役割：SE（チーム8名 ／ 全体30名）　工程：基本設計・詳細設計・製造・単体・結合・総合・保守運用</p>
+              <div class="tag-cloud">
+                <span class="tag tag-sm">Java</span>
+                <span class="tag tag-sm">Thymeleaf</span>
+                <span class="tag tag-sm">HTML / CSS / JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2021.03 – 2021.06（4ヶ月）</span>
+                <span class="timeline-industry">学術研究・専門技術サービス</span>
+              </div>
+              <h3 class="timeline-title">内部向け会計システムの開発</h3>
+              <p class="timeline-desc">
+                システムの実行環境構築と手順書作成、データ取込・画面表示・ダウンロード機能の実装を担当。
+                簿記知識を活かしたデータ設計の提案も行った。
+              </p>
+              <p class="timeline-role">役割：PG（チーム3名）　工程：プログラミング設計・製造・単体試験・環境構築・手順書作成</p>
+              <div class="tag-cloud">
+                <span class="tag tag-sm">Python</span>
+                <span class="tag tag-sm">Django</span>
+                <span class="tag tag-sm">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2021.01 – 2021.02（2ヶ月）</span>
+                <span class="timeline-industry">その他</span>
+              </div>
+              <h3 class="timeline-title">情報セキュリティ製品の機能テスト</h3>
+              <p class="timeline-desc">
+                メールの機密性を高める製品の機能テストを担当。テスト仕様書に基づき操作機能とパターンを検証し、
+                不具合の一覧化と開発メンバーへの修正案提示を実施。
+              </p>
+              <p class="timeline-role">役割：テスター（チーム3名）　工程：単体試験・結合試験</p>
+              <div class="tag-cloud">
+                <span class="tag tag-sm">Windows</span>
+                <span class="tag tag-sm">MS-Office</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2020.09 – 2020.12（4ヶ月）</span>
+                <span class="timeline-industry">その他</span>
+              </div>
+              <h3 class="timeline-title">内部業務サポートツールの開発</h3>
+              <p class="timeline-desc">
+                業務効率化のためのツールを開発。複数ファイルの読込・内容集約・統計出力ができるツールを実装し、
+                作業ミスの削減と月15時間程度の工数削減を実現。
+              </p>
+              <p class="timeline-role">役割：PG（1名）　工程：製造・単体試験</p>
+              <div class="tag-cloud">
+                <span class="tag tag-sm">Excel VBA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2019.06 – 2020.08（15ヶ月）</span>
+                <span class="timeline-industry">製造業</span>
+              </div>
+              <h3 class="timeline-title">卵の生産管理システム開発</h3>
+              <p class="timeline-desc">
+                各拠点の生産状況を一括管理するシステム開発を担当。フェーズ1ではマスタメンテナンス機能の登録・更新画面を実装し、
+                フェーズ2ではAPI連携によるデータ登録・画像検索・自動アップロード・データベース共有機能を追加。
+                最小機能でのリリース後、顧客フィードバックを反映する2段階開発方式で対応。
+              </p>
+              <p class="timeline-role">役割：SE（チーム6名 ／ 全体15名）　工程：調査分析・基本設計・詳細設計・プログラミング設計・製造・単体・結合・環境構築</p>
+              <div class="tag-cloud">
+                <span class="tag tag-sm">C#</span>
+                <span class="tag tag-sm">ADO.NET</span>
+                <span class="tag tag-sm">Oracle / SQL Server</span>
+                <span class="tag tag-sm">Twitter API</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 联系方式 ========== -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-content">
+        <h2 class="section-title fade-in">連絡先</h2>
+        <p class="contact-text fade-in">お仕事のご相談や就業機会のご連絡、あるいはちょっとした挨拶でも構いません。お気軽に下記の方法でご連絡ください。</p>
+
+        <a href="mailto:qimeimeiqi@gmail.com" class="contact-email fade-in">qimeimeiqi@gmail.com</a>
+
+        <div class="social-links fade-in">
+          <a href="https://github.com/qimeimeiqi-hash" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.07.77 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5z"/>
+            </svg>
+          </a>
+          <a href="mailto:qimeimeiqi@gmail.com" class="social-link" aria-label="メール" title="メール">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 9L3.5 6h17L12 13zM2 7.24V18h20V7.24l-10 7.5-10-7.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> 張美琪. All rights reserved.</p>
+      <p class="footer-note">Built with HTML / CSS / JavaScript</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="ページ上部へ戻る">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
