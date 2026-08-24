@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>main.js 行为测试</title>
+<style>
+  body { font-family: system-ui, sans-serif; padding: 16px; }
+  #summary { font-weight: bold; margin-bottom: 12px; font-size: 1.1em; }
+  #summary.pass { color: #0a7a2a; }
+  #summary.fail { color: #c62828; }
+  #results { padding-left: 1.2em; }
+  #results li.pass { color: #0a7a2a; }
+  #results li.fail { color: #c62828; }
+  #sut-frame { border: 1px solid #ccc; }
+</style>
+</head>
+<body>
+<h1>main.js 行为测试</h1>
+<p>在真实浏览器中加载 index.html + js/main.js，触发真实的滚动 / 点击 / IntersectionObserver 事件，验证真实产生的 DOM 结果。</p>
+<div id="summary">运行中...</div>
+<ul id="results"></ul>
+<script src="framework.js"></script>
+<script src="main.spec.js"></script>
+<script>
+  runAllTests(document.getElementById('results'));
+</script>
+</body>
+</html>
