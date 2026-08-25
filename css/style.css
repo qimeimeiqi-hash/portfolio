@@ -504,6 +504,66 @@ section[id] {
 }
 
 /* ============================================================
+   个人项目
+   ============================================================ */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.project-card-title {
+  font-size: 1.1rem;
+}
+
+.project-card-badge {
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.project-card-desc {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.project-card-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.project-card-links .btn {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+/* ============================================================
    联系方式
    ============================================================ */
 .contact-content {

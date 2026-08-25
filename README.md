@@ -1,6 +1,6 @@
 # 个人主页网站
 
-一个纯静态（HTML / CSS / JavaScript，无需构建工具）的单页个人主页，包含首屏、关于我、技能、职务经历（时间线）、联系方式等板块，并自动跟随系统深浅色模式。
+一个纯静态（HTML / CSS / JavaScript，无需构建工具）的单页个人主页，包含首屏、关于我、技能、职务经历（时间线）、个人项目、联系方式等板块，并自动跟随系统深浅色模式。
 
 ## 本地预览
 
@@ -52,11 +52,19 @@ todo/
 - [ ] **favicon（可选）**：`assets/favicon.svg` 当前为「ZM」文字图标，可替换为自定义图标
 - [ ] **SEO 描述（可选）**：`<head>` 中的 `<meta name="description">` 可按需精简调整
 
+## 个人项目板块
+
+`#projects` 区域（职务经历之后、联系方式之前）用卡片形式展示可公开的个人开发项目，与客户项目的职务经历区分开。目前收录了 1 个项目：
+
+- **Webデータ変動監視ツール**（[GitHub](https://github.com/qimeimeiqi-hash/monitor-app) / [デモ](https://qimeimeiqi-hash.github.io/monitor-app/)）：Web ページの内容変化・日本五大商社株価の 2 か月最安値監視ツール。GitHub Actions + Resend + Chart.js + GitHub Pages 构建，零成本运行。
+
+以后要追加新项目，在 `index.html` 的 `.project-grid` 内复制一份 `.project-card` 结构即可（标题、`.project-card-badge` 标签、描述、`.tag-cloud` 技术标签、`.project-card-links` 里的按钮链接），样式和响应式布局会自动适配，不需要改 CSS/JS。
+
 ## 后续可扩展方向
 
 - **博客 / 文章列表**：等有实际文章后再加，避免出现空列表
 - **推荐语 / 评价**：视情况取舍
-- **个人项目 / 开源作品**：如果之后有可公开展示的个人项目（有 GitHub 仓库或在线预览），可以在 `#career` 之后新增一个独立的「个人项目」卡片板块，与客户项目的职务经历区分开
+- **个人项目 / 开源作品**：✅ 已添加，见下方「个人项目板块」小节
 
 ## 技术说明
 
